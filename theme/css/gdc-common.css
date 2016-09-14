@@ -230,10 +230,14 @@ code {
 /* ************ */
 
 /* Nav Styling */
+.navbar-inner {
+    min-height: 0px;
+}
+
 .navbar-default {
   background: transparent;
   margin-bottom: 1rem;
-  padding: 0rem 0rem;
+  padding: 6px 0 0 0;
   margin: 0 auto 0 auto;
   width: 100%;
   height: 64px;
@@ -1754,3 +1758,48 @@ footer a:visited {
   text-decoration: none;
   background-color: #ededed;
 }
+
+.header-banner {
+  background-color: #265986;
+  color: white;
+  padding: 1rem 0.5rem 1rem;
+  transition: all 0.25s ease;
+  border-bottom: 1px solid #ebebeb;
+}
+
+.header-banner.enter, .header-banner.dismissed {
+    height: 0px;
+    overflow: hidden;
+    padding: 0;
+    border-bottom: 0;
+}
+
+.header-banner.warning {
+    background-color: #FFF176;
+    color: black;
+}
+
+.header-banner.error {
+    background-color: #DD2C00;
+}
+
+.header-banner-link {
+  margin-left: 0.6rem;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.header-banner-dismiss {
+  float: right;
+  margin: 0 1.5rem;
+  cursor: pointer;
+}
+
+.header-banner-dismiss:hover {
+  border-bottom: 1px solid white;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
